@@ -2,9 +2,13 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/')
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route("/")
 def home():
-    return "<h1>🚀 AI Event Assistant is LIVE!</h1><p>Your app is working perfectly.</p>"
+    return render_template("index.html")
 
 import os
 
