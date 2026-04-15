@@ -4,10 +4,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "🚀 AI Event Assistant is running!"
+    return "<h1>🚀 AI Event Assistant is LIVE!</h1><p>Your app is working perfectly.</p>"
 
-if __name__ == '__main__':
-    import os
+import os
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 10000))
