@@ -1,2 +1,25 @@
-<h1>AI Event Assistant</h1>
-<p>Project is working 🚀</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Event Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <h1>🎉 AI Event Assistant</h1>
+
+    <input type="text" id="query" placeholder="Ask about events...">
+    <button onclick="searchEvent()">Search</button>
+
+    <p id="result"></p>
+
+    <script>
+        function searchEvent() {
+            let input = document.getElementById("query").value;
+            document.getElementById("result").innerText =
+                "Searching for: " + input;
+        }
+    </script>
+
+</body>
+</html>
